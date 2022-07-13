@@ -1,0 +1,120 @@
+PARA CRIAR UM PROJETO EM FLUTTER SHIFT CTRL P
+
+Imperativo vs Declarativo
+
+Imperativo tem como objetivo de falar como tal coisa será feito, dando o paso a paso//Como fazer
+
+Declarativo tem como objetivo de falar oque será feito, peço algo não me importa como é feito //O que fazer
+
+===========
+
+Experiencia do usúario - todo o processo des da chegada do cliente ate a saida da "loja".
+
+Nativo vs Multiplataforma
+
+Nativo especifico para tal plataforma 
+
+Vantagem :
+-> Melhor experiencia do usúario 
+-> extrai o maximo do sistema operacional
+
+Desvantagem:
+->Equipes especializadas
+->Custo elevado para manter mais de uma equipe
+->Mais tempo dedicado para o desenvolvimento 
+
+Multiplataforma não consegue atigir 100% da experiencia do cliente
+
+Vantagem :
+->Um codigo para diversas plataformas 
+->Acelera o tempo de desenvolvimento
+->Custos menores
+
+Desvantagem:
+->Não entrega uma das melhores caracteristicas graficas
+
+Widgets:
+
+Quase tudo no Flutter é um widget, widget é um coponente visual
+
+Stateful vs Statelles
+
+Stateful
+->Tem estado
+-> Estado é uma informação ou grupo de informação que são alteradas durante o tempo de execução
+
+Statelles
+->A informação permanece a mesma durante a execução do app.
+
+Adaptativos vs Reponsivos
+
+Responsivos -> quando o loyout se encaixa em qualquer modelo
+
+Adaptativo -> vai diminuir conforme a tela 
+
+Splash Screens
+->Tela inicial do app
+
+Assets
+-> Uma imagen que pega coisas locais, não precisando de internet.
+
+Debug na Aplicação
+
+Estrutura de um projeto em Flutter
+
+
+child espera 1 widget
+children espera uma lista de widget
+
+column -> 
+
+
+
+https://www.javatpoint.com/flutter-widgets
+
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    //Metodo que vai inflar nosso app (executar)
+    MaterialApp(
+      //Widget que vem com configurações prontas
+      //Widget que já vem com bastante coisas de configurações pronta.
+      home: HomePage(), //Setando que minha home (tela inicial) será HomePage
+      debugShowCheckedModeBanner: false, // para tirar a faixa do debug
+    ),
+  );
+}
+
+class HomePage extends StatelessWidget {
+  // Classe sem estado
+  @override
+  Widget build(BuildContext context) {
+    //metodo que ira buildar toda nossa view
+    //passando o context (ajuda a identificar nossa arvore) e retornando um widget
+    return Scaffold(
+      //esqueleto do app,sempre interresante ter 1 em cada Page
+      appBar: AppBar(),
+      body: Center(
+        //Widget para centralizar dentro do espaço disponivel
+        child: Column(
+          children: [
+            const Text("Ola como voce está"),
+            const Text("Bem e voce"),
+            Image.network(
+              height: 300,
+              'https://cdn.pixabay.com/photo/2022/06/21/21/56/konigssee-7276585_960_720.jpg',
+            ),
+            ElevatedButton(
+              onPressed: () {
+                print("Fui clicado");
+              },
+              child: const Text("Enabled"),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
