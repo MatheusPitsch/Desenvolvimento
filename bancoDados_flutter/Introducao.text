@@ -13,4 +13,31 @@ Aquivos sequencias -> era guardado em seguencia, voce tinha que ler des do prime
    * Linguagem de exploração 
    * Programas Adicionais 
    
-   IBM -> Valiosa para construção e criação para os bancos de dados Modelo hierarquico -> Propos a criação de dados hierarquicos, Modelo em rede -> onde todos estão interligados sem hierarquia Dec.70 Modelo Relacional -> Onde os dados tem relacionamento Structured Query Language (SQL)
+   IBM -> Valiosa para construção e criação para os bancos de dados Modelo hierarquico 
+   -> Propos a criação de dados hierarquicos, Modelo em rede -> onde todos estão interligados sem hierarquia Dec.70 Modelo Relacional -> Onde os dados tem relacionamento Structured Query Language (SQL)
+
+   Existem 3 tipos de modelagem 
+
+   Modelagem Conceitual->
+
+    =======
+
+   Entidade -> Coisa ou objeto que esta ligado ao seu dominio de negocio (Podendo ser Fisica( Cliente,Produto ) ou Logica( Venda,Disciplina )
+   
+    =======
+
+   Atributos -> Os atributos são as caracteriasticas que descrevem a entidade, toda entidade precisa de um atributo indentificador(id).
+   
+    =======
+
+   Relacionamentos -> Relação existe entre duas entidades, Usuarios possuem Endereço // Professores ministram uma materia
+   
+   Cardinalidade -> usado para expressar o grau de relacionamneto entre duas tabelas 
+
+   Um para Um (1:1)-> Quando o registro de uma tabela so pode ter associação com um registro de outra tabela
+   Um para varios (1:n)-> Quando o registro de uma tabela so pode ter associação com varios registro de outra tabela
+   varios para varios (1:1)-> Quando varios registros de uma tabela so pode ter associação com varios registro de outra tabela (NESSE CASO É CRIADO ENTIDADE ASSOCIATIVA)
+
+   Cardinalidade min -> numero minimo de vezes que um registro da entidade A pode ocorrer em B (0 ou 1)
+
+   Cardinalidade max -> numero maximo de vezes que a entidade A pode ocorrer em B (1 ou N )

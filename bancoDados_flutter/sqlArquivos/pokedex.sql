@@ -745,6 +745,59 @@ SELECT ataque, especial_ataque, defesa,especial_defesa from pokemons;
 SELECT nome,categoria,ataque from pokemons
 order by ataque;
 
+SELECT altura, peso, peso/sqrt(altura) as imc From pokemons;
 
+SELECT altura,peso , peso/sqrt(altura) as imc From pokemons
+order by imc desc;
+
+SELECT nome, length(nome) from pokemons
+order by nome desc;
+
+SELECT nome, descricao from pokemons
+where length(nome) > 10;
+
+SELECT nome,categoria, min(ataque) from pokemons;
+
+SELECT ataque, especial_ataque, nome,defesa,especial_defesa from pokemons
+order by ataque;
+
+
+SELECT avg(ataque) from pokemons;
+
+SELECT sum(ataque) from pokemons;
+
+select avg(especial_ataque) from pokemons
+where nome LIKE "P%";
+
+update pokemons
+set categoria = "seed"
+where codigo >= 50 and codigo <= 100;
+
+update pokemons 
+set ataque = 29
+where nome like '%inj%';
+
+DELETE FROM pokemons
+where categoria = "seed";
+
+DELETE FROM pokemons
+where nome like "%Nid%";
+
+select * from pokemons;
+ 
+
+
+nome VARCHAR(255),
+	codigo VARCHAR(4),
+	categoria VARCHAR(255),
+	altura FLOAT,
+	peso FLOAT,
+	hp INT,
+	ataque INT,
+	defesa INT,
+	especial_ataque INT,
+	especial_defesa INT,
+	velocidade INT,
+	descricao TEXT
 
 
