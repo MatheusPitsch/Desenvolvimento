@@ -1,5 +1,5 @@
-import 'package:arquitetura_limpa_1/app/doamin/entitites/computer_entity.dart';
-import 'package:arquitetura_limpa_1/app/doamin/repositories/get_computer_bybrand_repository.dart';
+import '../../entitites/computer_entity.dart';
+import '../../repositories/get_computer_bybrand_repository.dart';
 
 import 'get_computer_bybrand.dart';
 

@@ -1,4 +1,5 @@
+import '../../entitites/computer_entity.dart';
 
 abstract class ISaveComputerFavoriteUsecase {
-  Future<bool> call();
+  Future<bool> save(ComputerEntity computer);
 }
