@@ -1,0 +1,60 @@
+Arquitetura Limpa -> Separação depreocupação 
+
+Dividir o softewar em camadas para simplificar o desenvolvimento e manutenção do sistema.
+
+Regra de dependencia -> As dependencias do cógigo fonte só apontam para dentro,significaque os modolus interns não estão cientes nem dependem do módulo esternos,
+Modulos externos são consientes e dependentes de módulos internos.
+
+Regras de dependencia -> quando mais você se move para dentro, mais abstração está presente, quando mais se move para fora mais implementações concretas estão presentes. 
+
+camadas
+
+DOMAIN - Camada mais interna das camadas // sem deen com outras camadas
+contem:
+
+
+*Entidade -> Ex um produto é uma entidade , 
+Aqui se aplica regra cooperativas ex o preço não pode ser menor que zero
+
+*Casos de Uso -> Formas de você manejar sua entidade  (Açao que você consegue fazer com a entidade)
+Regra de negocio da aplicação 
+
+*Interfaces de repositorio -> Ele quem cria o contrato do caso de uso
+
+Domain nao tem importação de packages externos
+
+Não conhece nada do mundo externo
+
+
+
+Domain/entities 
+
+Regra de negocios corporativa
+
+Dentro ficara as entidades do mundo real (atributos e porde ter metodos)
+
+nao tera o .fromJson e .toJson ou .fromMap e .toMap
+
+Nossos entities serão usadas em alguns lugares, comom ou usecase, que veremos a seguir
+
+
+Domain/Usecase
+
+As regras de negocio da aplicação
+
+Dentro ficara os casos de uso 
+
+Os casos de uso são classes que fara alguma ação como get_computer_bybrand_usecase.dart
+
+Será composta por uma interface e por uma implementação por isso é interessante criar uma pasta  para cada usecase
+
+Na implementação a gente chamara um repository que é a proxima parte do dmain que veremos
+
+Domain/Repositorires
+
+Nesse repositorio nos criamos apenas abstração (contrato)
+
+Ainda mão sabemos se sera usado Firebase, Api rest,banco local, e nosso repository do domain não quer nem saber qual deles, o que ele precisa fazer é criar um contrato
+
+Sempre iremos postergando as decisões de implementação para as camadas mais externas 
+
