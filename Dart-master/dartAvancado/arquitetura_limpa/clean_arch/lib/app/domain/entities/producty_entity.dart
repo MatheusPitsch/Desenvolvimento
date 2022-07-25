@@ -1,4 +1,6 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 class ProductyEntity {
+  int id;
   String name;
   String brand;
   String category;
@@ -6,6 +8,7 @@ class ProductyEntity {
   int qtd;
 
   ProductyEntity({
+    required this.id,
     required this.name,
     required this.brand,
     required this.category,

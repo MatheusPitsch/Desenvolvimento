@@ -6,18 +6,21 @@ class GetAllProductsLocalDatasourceImp implements GetAllProductsDatasource {
   List<ProductyEntity> call() {
     return [
       ProductyEntity(
+          id: 1,
           name: "Computador",
           brand: "Lenovo",
           category: "Eletronicos",
           price: 1000,
           qtd: 3),
       ProductyEntity(
+          id: 2,
           name: "CellPhone",
           brand: "IPobre",
           category: "Eletronicos",
           price: 10,
           qtd: 1),
       ProductyEntity(
+          id: 3,
           name: "Garrafa de Agua",
           brand: "Caixa da água",
           category: "Utilitarios",

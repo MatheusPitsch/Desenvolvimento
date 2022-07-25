@@ -1,6 +1,6 @@
 
-import '../entities/producty_entity.dart';
-import '../repositories/get_all_products_repository.dart';
+import '../../entities/producty_entity.dart';
+import '../../repositories/get_all_products_repository.dart';
 import 'get_all_products_usecase.dart';
 
 //Contém as regras de negocia de aplicação 

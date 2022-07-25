@@ -1,5 +1,5 @@
 import '../../domain/entities/producty_entity.dart';
-import '../../domain/usecases/get_all_products_usecase.dart';
+import '../../domain/usecases/list_product/get_all_products_usecase.dart';
 
 class ProductController {
   GetAllProductsUsecase _getAllProductsUsecase;

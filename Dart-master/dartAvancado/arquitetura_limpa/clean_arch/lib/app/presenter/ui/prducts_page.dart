@@ -1,20 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../../domain/usecases/get_all_products_usecase_imp.dart';
-import '../../infra/datasources/local/get_all_products_local_datasource_imp.dart';
-import '../../infra/repositories/get_all_products_repository_imp.dart';
+import '../../../core/get_it.dart';
 import '../controllers/product_controller.dart';
 
 class ProductsPage extends StatelessWidget {
   ProductsPage({Key? key}) : super(key: key);
 
-  ProductController controller = ProductController(
-    GetAllProductsUsecaseImp(
-      GetAllProductsRepositoryImp(
-        GetAllProductsLocalDatasourceImp(),
-      ),
-    ),
-  );
+  ProductController controller = getIt.get<ProductController>();
 
   @override
   Widget build(BuildContext context) {
@@ -22,10 +14,35 @@ class ProductsPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Produtos"),
       ),
-      body: Center(
-        child: Text(
-          controller.products.toString(),
-        ),
+      body: ListView.builder(
+        itemCount: controller.products.length,
+        itemBuilder: (contex, index) {
+          //return Text(controller.products[index].name);
+          return Column(
+            children: [
+              Card(
+                elevation: 15,
+                child: Container(
+                  padding:
+                      EdgeInsets.only(left: 50, right: 50, top: 25, bottom: 25),
+                  child: Column(
+                    children: [
+                      Text(controller.products[index].id.toString()),
+                      Text(controller.products[index].name),
+                    ],
+                  ),
+                ),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  "Item",
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+            ],
+          );
+        },
       ),
     );
   }
