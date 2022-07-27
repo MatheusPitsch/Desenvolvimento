@@ -17,7 +17,7 @@ class CellPhoneProduct extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(controller.product!.brand),
+            // Text(controller.product!.brand),
           ],
         ),
       ),

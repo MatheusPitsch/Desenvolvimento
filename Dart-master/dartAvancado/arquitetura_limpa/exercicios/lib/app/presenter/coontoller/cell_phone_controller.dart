@@ -5,11 +5,11 @@ class CellPhoneController {
   final GetCellphonesByBrandUsecase _getCellphonesByBrandUsecase;
 
   CellPhoneController(this._getCellphonesByBrandUsecase) {
-    getProductByBrand('Ipobre');
+    // getProductByBrand();
   }
 
-  CellPhoneEntities? product;
-  void getProductByBrand(String brand) {
-    product = _getCellphonesByBrandUsecase.call(brand);
+  List<CellPhoneEntities> product = [];
+  getProductByBrand(String brand) {
+    // return product = _getCellphonesByBrandUsecase.call(brand);
   }
 }
