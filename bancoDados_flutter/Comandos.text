@@ -81,3 +81,33 @@ DELETE FROM table_name WHERE condition;
 ============
 
 SELECT TOP -> Serve para dizer numero de registros a serem retornados
+
+============
+
+CREATE DATABASE -> Usada para a criação de um database
+Ex:
+(
+CREATE DATABASE databasename;
+)
+
+DROP DATABASE -> Usado para quando queremos deletar um banco de dados
+Ex:
+(
+DROP DATABASE databasename;
+)
+
+============
+
+CREATE TABLE -> Serve para criar tabelas
+Ex:
+(
+CREATE TABLE Persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
+);
+)
+
+TIPOS DE DADOS ->

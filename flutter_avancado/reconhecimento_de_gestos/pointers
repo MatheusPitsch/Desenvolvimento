@@ -1,0 +1,13 @@
+Pointer
+
+Pointer Down Event
+-> ponteiro entrou em contato com a tela em um local especifico.
+
+Pointer Move Event
+->O ponteiro foi movido de um local para outro na tela
+
+Pointer Up Event
+->o pronteiro parou de entrar em contato com a tela 
+
+Pointer Cancel Event
+->A entrada deste ponteiro não é main direcionada para este aplicativo
