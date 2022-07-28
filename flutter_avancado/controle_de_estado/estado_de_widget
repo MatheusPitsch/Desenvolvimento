@@ -1,0 +1,5 @@
+Estado Widget
+
+Estado Enfemero (as vezes chamado de estado de UI ou estado local) é o estado que pode ser contido perfeitamente em um único widget.
+
+Exemplos: O BottomNavigatorBar, progresso atual de uma animaão complexa e etc.
