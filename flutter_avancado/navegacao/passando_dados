@@ -1,0 +1,3 @@
+Passando dados de uma tea para outra pela navegação
+
+Navigator.of(context).pushNamed("/home",arguments: "qualquer dado aqui (dynamic)");
