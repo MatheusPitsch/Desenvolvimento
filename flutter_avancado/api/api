@@ -1,0 +1,33 @@
+Api - Interface Generica / Interface de Programação de Aplicaçao 
+
+* Conceitos sobre protocolo Http
+* Json e serialization
+* Dio
+
+
+* Protocolo Http 
+
+-> É um protocolo para buscar recusrsos, como documento Html, é a base de qualquer troca de dados web e é um protocolo cliente-servidor, 
+oque significa que as solicitações são iniciadas pelo destinatário, geralmente o navegador da web.
+
+-> Cliente e servidores se comunicam trocando mensagens individuais (em oposição a um fluxo de dados).
+As mensagens enviadas pelo cliente, geralmente um navegador da web, 
+são chamadas de solicitação e as mensagens enviadas pelo sevidor como resposta são chamadas de respostas
+
+Quias os tipos de response?
+
+-> Normalmente é o json
+
+-> Porem pode ter requisição sem corpo, ou seja, se não deu erro, significa que deu certo
+
+
+Tipos de Metodos Request
+
+* Get - Traz dados
+* Post - Envia dados
+* Put -  Usado quando é enviado poucas informações 
+* Delete - Exclui um dado
+* Patch - Altera o campo de um valor
+
+site developer.mozila.org
+
