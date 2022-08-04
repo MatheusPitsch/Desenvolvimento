@@ -1,17 +1,17 @@
 import 'package:dio/dio.dart';
+import 'package:exersice_api/api_model.dart';
+import 'package:exersice_api/api_repository.dart';
 import 'package:flutter/material.dart';
-import 'package:get_api_movies/movie_repository.dart';
 
-import 'movie_model.dart';
 
-class MoviesPage extends StatefulWidget {
-  const MoviesPage({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
-  State<MoviesPage> createState() => _MoviesPageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _MoviesPageState extends State<MoviesPage> {
+class _HomePageState extends State<HomePage> {
   MovieRepository repository = MovieRepository(Dio());
 
   late Future<List<MovieModel>> movies;
@@ -25,21 +25,22 @@ class _MoviesPageState extends State<MoviesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Movies'),
-      ),
       body: Center(
         child: FutureBuilder(
           future: movies,
           builder: (context, AsyncSnapshot<List<MovieModel>> snapshot) {
             if (snapshot.hasData) {
-              return ListView.builder(
+              return 
+              ListView.builder(
                 itemCount: snapshot.data!.length,
                 itemBuilder: (context, index) {
-                  MovieModel movie = snapshot.data![index];
-                  return ListTile(
-                    title: Text(movie.title),
-                    subtitle: Text(movie.description),
+                  MovieModel movie = snapshot.data![0];
+                  return Column(
+                    children: [
+                      Container(
+                        child: Image.network(movie.movieBanner),
+                      ),
+                    ],
                   );
                 },
               );
