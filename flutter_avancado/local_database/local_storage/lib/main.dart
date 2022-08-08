@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'home_page.dart';
+import 'package:local_storage/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Local Storage',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.lime,
       ),
-      home: const HomePage(),
+      home: HomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
