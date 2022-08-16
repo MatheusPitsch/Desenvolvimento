@@ -1,0 +1,27 @@
+Performance na redenrização 
+-> Velocidaade
+-> Memoria
+-> Tamanho do Aplicativo
+-> Energia
+
+-> Sempre que possivel use const nos Widgets
+-> Não Fazaer a avore de qualquer jeito
+-> Não fazer widgets desnecessarios
+-> Faça a extração de Widgets com classes Stateless e não com métodos 
+-> Sempre que possivel crie os construtores
+-> Evite trabalhos repetitivos
+-> Evite widgets unicos excesivamente grandes 
+-> Evite chamar no alto da arvore se a alteração stiver contida em uma pequena parte da arvore
+-> Use construtores em widgets  maximo possivel pois eles permitem que o Flutter cause um curto circuito na maior parte do trabalho de recontrução
+-> Para criar partes reutilizaveis de UIs, prefira usar um statelessWidget em vez de uma fnção que retorna o Widget
+
+
+-> Evitar Usar Widgets Opacity e evite principalmente em uma animação, use o animatedOpacity ou FadelnImage em vez disso
+
+
+Tamanho do App
+->
+->
+->
+->
+->

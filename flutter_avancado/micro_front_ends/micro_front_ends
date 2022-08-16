@@ -1,0 +1,35 @@
+A ideia do micro front ends é exatamente permitir que cada pedaço da aplicação seja independente 
+
+comando para criar packages templates -> flutter create --template = package micro-app
+
+Abordagens para fazer a separação logica dos projetos:
+
+-> Mono-Repo
+-> Mult-Repo
+
+Organização de Micro Frontedns
+
+-> MONOLITH   -> MULTI-REPO  -> MONO-REPO
+
+-> Mono-Repo
+Projeto em um único repositorio, com separação lógica via pastas e subpastas
+
+-> Mult-Repo
+Nossos Produtos são separados em varios repositorios diferentes, tendo um projeto base responsavel pelo import de todos os demais produtos 
+
+Fluxo de aprendizagem
+* Monolitico
+* Mono Repo
+* Multi Repo
+ 
+ Como se comunicam?
+ -> Varias abordagens podem ser utilizadas para resolver o problema de comunicação.
+-> Podemos aplicar uma tecnica chamada de event bus, onde criamos um broadcast que consegue eniar mensagens para todos os Micro Frontends
+
+base-app: seria o responsavel por realizar os imports e inicialização de todos os MF
+
+micro-core: possui a maior responsabilidade nesta arquitetura, responsavel por possuir os contratos de inicialização e comunicação entre os MF
+
+micro-app: responsavel por de fato possuir toda a logica de prduto. não sabe da existencia de outros micro-apps e somente conhece as libs comuns 
+
+micro-commons:finalmente esse deve conter toda a parte estrutural desing systems, dependencias e etc.

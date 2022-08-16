@@ -1,0 +1,19 @@
+Acesibilidade
+
+-> Uma forma de deixar a interface do usuario o maximo acessivel para todas as pessoas de aplicativos
+
+Interações ativas ->  Certifica que todos os botões executam alguma ação
+ 
+Teste do leitor da tela -> Descricao das ações devem se claras
+
+Relação de contraste -> Difirenca entre a cor do fundo e a da letra
+
+Mudanca de Contexto -> Não deve alterar o contexto da tela, deve ser solicitado ao usuario se ele realmente que fazer aquela ação
+
+Alvos Tappble - > Todos os botons devem conter pelo menos 48x48 pixels e um espasamento de um botão para o outro
+
+Teste de Deficiencia de Visao de cor -> Os botons devem ser utilizados e legiveis nos modos daltnico e em escala de cinza
+
+Fatores de Escala -> A interface do usuario deve permanecer legivel e utilizavel 
+
+Internacionalizaão -  O aplicativo precisa de uma maneira que posibilite a localização de valores como texto e loyouts para cada idioma ou local que o aplicativo suporta
