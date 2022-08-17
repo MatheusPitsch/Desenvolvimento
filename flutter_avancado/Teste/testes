@@ -1,0 +1,39 @@
+* Testar antes de começar a programar
+
+Por que testar?
+
+-> Garantir que o sistema atende todos os requisitos conforme o cliente solicitou
+-> Teste Unitario ajuda a documentar o codigo
+-> Testes automatizados ajudam na verificação de funcionalidades que necessitam de testes continuos e a monitorar e sinalizar problemas antgos.
+
+Os 3 tipos de testes
+-> UI (Teste de Widgets) - Como se fosse uma pessoa usando
+-> Teste de Integração - Teste de coisas que vem de fora (Api/Repositorio)
+-> Testes Unitários - Testar funcionalidades especificas (metodos)
+
+
+Testes Unitarios precisa de uma dependencia:
+* test: ^1.6.1
+
+Teste Widget
+-> Tem como objetivo verificar se ele agira de forma esperada,
+    o widget testado podera receber e reagir a eventos do usuario,
+    conseguira instanciaar widgets filhos e simulara a construção da UI
+
+*Precisamos importar apenas o flutter_test como dependencia de desenvolvimento
+
+WidgetTester: responsavel por toda a simulação.
+pumpWidget: Cria o widget e fala para o WidgetTester contruilo
+pump: Reconstroi o widget depois de uma determinado periodo de tempo
+pumpAndSettle: Reconstroi o widget ate o ultimo estado
+Finder: Como o nome entrega, ele é responsavel por achar widget
+
+Teste de UI:
+São teste utilizados para testar os elementos graficos d seu aplicativo ,
+Precisamos adicionar a dependencia flutter_driver
+
+* Podemos adicionar uma dependencia flutter_gherkin,
+ ajudara a escrever nossos testes de forma mais agil
+
+
+
