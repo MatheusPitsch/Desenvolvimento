@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Console ReadLine</Title>
+			<Author>Pitsch</Author>
+			<Description>add Console.ReadLine.</Description>
+			<Shortcut>cr</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="">
+				<Code Language="CSharp">
+					<![CDATA[Console.ReadLine]]>
+				</Code>>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
