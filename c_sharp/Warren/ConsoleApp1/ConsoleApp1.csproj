@@ -43,9 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="0-Type Value\Enumerate.cs" />
+    <Compile Include="0-Type Value\Enumerate2.cs" />
+    <Compile Include="0-Type Value\Struct.cs" />
+    <Compile Include="0-Type Value\TypeBoolean.cs" />
     <Compile Include="0-Type Value\TypeNumber3.cs" />
     <Compile Include="0-Type Value\TypeNumber2.cs" />
     <Compile Include="0-Type Value\TypeValueNunbers.cs" />
+    <Compile Include="1-TypeReferenci\CrudPersonLegal.cs" />
+    <Compile Include="1-TypeReferenci\CrudPerson.cs" />
+    <Compile Include="1-TypeReferenci\Person.cs" />
+    <Compile Include="1-TypeReferenci\PersonLegal.cs" />
+    <Compile Include="1-TypeReferenci\PhysicalPerson.cs" />
+    <Compile Include="1-TypeReferenci\TestPerson.cs" />
     <Compile Include="99-Exercise\000Cadastro.cs" />
     <Compile Include="Bemvindo.cs" />
     <Compile Include="Program.cs" />

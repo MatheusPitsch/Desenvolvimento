@@ -1,12 +1,14 @@
 ﻿using System;
 using ConsoleApp1._0_Type_Value;
 using ConsoleApp1._99_Exercise;
+using ConsoleApp1._1_TypeReferenci;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
     class Program
+
     {
-        private static object xercise;
 
         static void Main(string[] args)
         {
@@ -48,9 +50,31 @@ namespace ConsoleApp1
 
             }
 
+            {/*
+                TypeNumber3.Execute();
+             */
+            }
+
+            {/*
+                Enumerate.Execute();
+            */
+            }
+
+            {/*
+                Enumerate2.Execute();
+           */
+            }
+
+            {/*
+                Struct.Execute();
+            */
+            }
 
             {
-                TypeNumber3.Execute();
+
+                TestPerson.ExecutePerson();
+                TestPerson.ExecutePersonLegal();
+
             }
             Console.ReadLine();
         }
