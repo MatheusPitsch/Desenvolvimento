@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1._1_TypeReferenci
 {
-    class Person
+    class Person : BaseModel
     {
    
         public string Name { get; set; }

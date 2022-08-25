@@ -3,6 +3,7 @@ using ConsoleApp1._0_Type_Value;
 using ConsoleApp1._99_Exercise;
 using ConsoleApp1._1_TypeReferenci;
 using System.Collections.Generic;
+using ConsoleApp1._99_Exercise.vinte_e_cinco;
 
 namespace ConsoleApp1
 {
@@ -71,11 +72,25 @@ namespace ConsoleApp1
             }
 
             {
-
+                /*
                 TestPerson.ExecutePerson();
                 TestPerson.ExecutePersonLegal();
+                */
+            }
+
+            {/*
+                TestPerson.ExecutePerson();
+                */
+            }
+
+            {
+                Car car = new Car("Fusca", "Sei la", 6123422.12m);
+                Console.WriteLine(car.DiscountPrice());
+
+                CarRepository carRepository = new CarRepository();
 
             }
+
             Console.ReadLine();
         }
 

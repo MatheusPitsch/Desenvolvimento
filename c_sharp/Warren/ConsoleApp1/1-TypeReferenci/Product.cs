@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1._1_TypeReferenci
 {
-    internal interface IRepository<T>
-    {        
-        string Create(T p);
-
-        List<T> Read();
-
-        string Update(T p);
-        string Delet(int Id);
+    class Product : BaseModel
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
         
     }
 }

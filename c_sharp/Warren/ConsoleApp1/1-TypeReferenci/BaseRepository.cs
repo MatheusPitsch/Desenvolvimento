@@ -6,34 +6,34 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1._1_TypeReferenci
 {
-    class BaseRepository : IRepository
+    class BaseRepository<T> : IRepository<T> where T : BaseModel
     {
-        List<Person> person;
+        List<T> person;
 
         public BaseRepository()
         {
-            this.person = new List<Person>();
+            this.person = new List<T>();
         }
 
-        public string Create(Person person)
+        public string Create(T person)
         {
             this.person.Add(person);
-            return "Person: " + person.Name + " save sucess.";
+            return "Person: " + person.Id + " save sucess.";
         }
 
         public string Delet(int Id)
         {
-            throw new NotImplementedException();
+            return "Person the id: " + Id + " delet sucess";
         }
 
-        public List<Person> Read()
+        public List<T> Read()
         {
-            throw new NotImplementedException();
+            return person;
         }
 
-        public string Update(Person person)
+        public string Update(T person)
         {
-            throw new NotImplementedException();
+            return "Person: " + person.Id + " changed sucess";
         }
     }
 }
