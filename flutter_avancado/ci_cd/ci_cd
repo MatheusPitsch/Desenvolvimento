@@ -1,0 +1,7 @@
+
+ci/cd se refere a praticas combinada de integração continua e entrega continua,
+ci/cd preenche lacunas entre as atividades e equipes de desenvolvimento e operção,
+refrçando a automação na compilação, teste e implementaão de aplicativos.
+
+GitHub Actions -> É feito para que você não precise de recursos dedicados para configurar e manter seu pipeline.
+Não ha necessidade de configurar manualmente e configurar ci/cd
