@@ -1,4 +1,5 @@
-﻿using data.Model;
+﻿using data.Context;
+using data.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,6 @@ namespace data.Repositorio
 {
     public class AnimalRepository : BaseRepository<Animal>
     {
+        
     }
 }

@@ -12,7 +12,7 @@ namespace data.Repositorio
         string Create(T model);
         string Update(T model);
         string Delete(int Id);
-        List<T> GetAll(T model);
+        List<T> GetAll();
 
         T GetById(int Id);
     }

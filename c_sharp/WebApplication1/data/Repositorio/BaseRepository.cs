@@ -1,4 +1,5 @@
-﻿using data.Model;
+﻿using data.Context;
+using data.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,30 +10,53 @@ namespace data.Repositorio
 {
     public class BaseRepository<T> : IRepository<T> where T : BaseModel
     {
-        public string Create(T model)
-        {
-            return "Criado";
-        }
-
-        public string Delete(int Id)
-        {
-            return "Deletado";
-        }
-
-        public List<T> GetAll(T model)
+        public virtual List<T> GetAll()
         {
             List<T> list = new List<T>();
+            using (WarrenContext wc = new WarrenContext())
+            {
+                list = wc.Set<T>().ToList();
+            }
             return list;
         }
 
-        public T GetById(int Id)
+        public virtual string Create(T model)
+        {
+            using (WarrenContext wc = new WarrenContext())
+            {
+                wc.Set<T>().Add(model);
+                wc.SaveChanges();
+            }
+            return "Criado";
+        }
+
+        public virtual string Delete(int Id)
+        {
+            
+            using (WarrenContext wc = new WarrenContext())
+            {
+                wc.Entry<T>(this.GetById(Id)).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
+            }            
+            return "Deletado";
+        }
+
+        public virtual T GetById(int Id)
         {
             T model = null;
+            using (WarrenContext wc = new WarrenContext())
+            {
+                model = wc.Set<T>().Find(Id);
+            }
             return model;
         }
 
-        public string Update(T model)
+        public virtual string Update(T model)
         {
+           
+            using (WarrenContext wc = new WarrenContext())
+            {
+                wc.Entry<T>(model).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            }
             return "Alterado";
         }
     }
