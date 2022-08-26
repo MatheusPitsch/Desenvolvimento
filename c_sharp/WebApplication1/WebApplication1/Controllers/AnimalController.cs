@@ -15,7 +15,7 @@ namespace WebApplication1.Controllers
             this.repo = new AnimalRepository();
         }
 
-            [HttpGet]   
+        [HttpGet]
         public List<Animal> Get()
         {
             AnimalRepository repo = new AnimalRepository();
@@ -26,6 +26,20 @@ namespace WebApplication1.Controllers
         {
             AnimalRepository repo = new AnimalRepository();
             return repo.Create(model);
+
+        }
+        [HttpDelete]
+        public string Delete(int Id)
+        {
+            AnimalRepository repo = new AnimalRepository();
+            return repo.Delete(Id);
+
+        }
+        [HttpPut]
+        public string Put(Animal model)
+        {
+            AnimalRepository repo = new AnimalRepository();
+            return repo.Update(model);
 
         }
     }
