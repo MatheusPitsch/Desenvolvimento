@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiLogin", "ApiLogin.csproj", "{9B285A8C-F526-4B9F-BCF8-C301A9744215}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "..\Data\Data.csproj", "{22E63BD8-45BA-4DA1-B451-A3BE83C24243}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B285A8C-F526-4B9F-BCF8-C301A9744215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B285A8C-F526-4B9F-BCF8-C301A9744215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B285A8C-F526-4B9F-BCF8-C301A9744215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B285A8C-F526-4B9F-BCF8-C301A9744215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22E63BD8-45BA-4DA1-B451-A3BE83C24243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22E63BD8-45BA-4DA1-B451-A3BE83C24243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22E63BD8-45BA-4DA1-B451-A3BE83C24243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22E63BD8-45BA-4DA1-B451-A3BE83C24243}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {456F1821-08D1-453D-A93B-7F0E30D78E7D}
+	EndGlobalSection
+EndGlobal
