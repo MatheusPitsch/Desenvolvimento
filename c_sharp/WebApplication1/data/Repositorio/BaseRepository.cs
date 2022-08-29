@@ -36,6 +36,7 @@ namespace data.Repositorio
             using (WarrenContext wc = new WarrenContext())
             {
                 wc.Entry<T>(this.GetById(Id)).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
+                wc.SaveChanges();
             }            
             return "Deletado";
         }
@@ -56,6 +57,7 @@ namespace data.Repositorio
             using (WarrenContext wc = new WarrenContext())
             {
                 wc.Entry<T>(model).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                wc.SaveChanges();
             }
             return "Alterado";
         }
