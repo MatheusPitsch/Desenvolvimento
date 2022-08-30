@@ -72,7 +72,7 @@ class SuccessfulPage extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 50),
-             ButtonSing(textButton:"SING IN"),
+             ButtonSing(textButton:"SING IN",onPressed: () {}),
             ],
           ),
         ),

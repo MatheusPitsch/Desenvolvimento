@@ -3,14 +3,17 @@ import 'package:flutter/material.dart';
 
 class TextFieldInfos extends StatelessWidget {
   String textFieldInfos;
+  final TextEditingController controller;
   TextFieldInfos({
     Key? key,
     required this.textFieldInfos,
+    required this.controller,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      controller: controller,
       decoration: InputDecoration(
         hintText: textFieldInfos,
         filled: true,

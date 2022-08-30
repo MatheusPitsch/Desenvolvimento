@@ -2,15 +2,16 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:integration_api/app/successful/successful_page.dart';
-
 class ButtonSing extends StatelessWidget {
   String textButton;
+
+  dynamic onPressed;
+
   bool? isCreateAccount;
   ButtonSing({
     Key? key,
     required this.textButton,
-    this.isCreateAccount,
+    required this.onPressed,
   }) : super(key: key);
 
   @override
@@ -19,13 +20,7 @@ class ButtonSing extends StatelessWidget {
       height: 45,
       width: 250,
       child: ElevatedButton(
-        onPressed: () { 
-          isCreateAccount!? null : Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) => const SuccessfulPage(),
-            ),
-          );
-        },
+        onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           primary: Colors.white,
           shape: RoundedRectangleBorder(

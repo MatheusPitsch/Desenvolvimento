@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:integration_api/app/sing_in/sing_in_page.dart';
+import 'app/sing_in/sing_in_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SingInPage(),
+      home: SingInPage(),
       debugShowCheckedModeBanner: false,
     );
   }

@@ -16,9 +16,11 @@ class ButtonText extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-      isCreateAccount!? null : Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => const CreateAccountPage(),
-        ));
+        isCreateAccount!
+            ? null
+            : Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => CreateAccountPage(),
+              ));
       },
       child: Text(
         textButton,

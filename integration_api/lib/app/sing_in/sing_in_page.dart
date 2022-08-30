@@ -6,8 +6,10 @@ import '../../widget/row_icon.dart';
 import '../../widget/text_field_infos.dart';
 
 class SingInPage extends StatelessWidget {
-  const SingInPage({Key? key}) : super(key: key);
+  SingInPage({Key? key}) : super(key: key);
 
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwpordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,12 +40,14 @@ class SingInPage extends StatelessWidget {
                 children: [
                   TextFieldInfos(
                     textFieldInfos: "Email",
+                    controller: emailController,
                   ),
                   const SizedBox(
                     height: 10,
                   ),
                   TextFieldInfos(
                     textFieldInfos: "Password",
+                    controller: passwpordController,
                   ),
                 ],
               ),
@@ -58,7 +62,7 @@ class SingInPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 60),
-            ButtonSing(textButton: "SING IN", isCreateAccount: true),
+            ButtonSing(textButton: "SING IN", onPressed: () {}),
             const SizedBox(height: 60),
             const Text(
               "Enter your personal datails ",
