@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:integration_api/sing_in_page.dart';
+import 'package:integration_api/app/sing_in/sing_in_page.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'create_account_page.dart';
+import '../../widget/buttom_sing.dart';
+
 
 class SuccessfulPage extends StatelessWidget {
   const SuccessfulPage({Key? key}) : super(key: key);
@@ -11,7 +12,7 @@ class SuccessfulPage extends StatelessWidget {
       backgroundColor: Colors.purple.shade900,
       body: SafeArea(
         child: Container(
-          padding: const EdgeInsets.only(top: 50, right: 80, left: 90),
+          padding: const EdgeInsets.only(top: 50, right: 80, left: 80),
           child: Column(
             children: [
               const Text(
@@ -64,33 +65,14 @@ class SuccessfulPage extends StatelessWidget {
                 ),
               ),
               const Text(
-                "maykondgranemann@gmail.com",
+                "maykondgraneman@gmail.com",
                 style: TextStyle(
                     color: Colors.grey,
                     fontSize: 15,
                     fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 80),
-              SizedBox(
-                height: 35,
-                width: 225,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
-                  child: Text(
-                    "SING IN",
-                    style: TextStyle(
-                      color: Colors.purple.shade900,
-                      fontSize: 20,
-                    ),
-                  ),
-                ),
-              ),
+              const SizedBox(height: 50),
+             ButtonSing(textButton:"SING IN"),
             ],
           ),
         ),
