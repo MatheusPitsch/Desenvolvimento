@@ -14,6 +14,8 @@ namespace data.Context
         public DbSet<Planta> Planta { get; set; }
         public DbSet<User> User { get; set; }
 
+        public DbSet<Product> Product { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql("Host=192.168.0.96; Port=5436; Database=postgres; UserId=postgres; Password=12345");
